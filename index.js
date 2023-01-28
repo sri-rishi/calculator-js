@@ -1,3 +1,7 @@
+const app = document.querySelector(".app")
+const checkbox = document.getElementById("theme-checkbox");
+const container = document.querySelector(".container");
+
 const prevInput = document.querySelector(".prev-input");
 const currInput = document.querySelector(".curr-input");
 const tempResult = document.querySelector(".temp-result");
@@ -7,7 +11,13 @@ const point = document.querySelector(".dot");
 const zero = document.querySelector(".btn-0");
 const equal = document.querySelector(".equal");
 const clearLastEntity = document.querySelector(".last-entity-clear");
-const clearAll = document.querySelector(".all-clear")
+const clearAll = document.querySelector(".all-clear");
+
+
+checkbox.addEventListener("change", () => {
+    app.classList.toggle("light");
+    container.classList.toggle("container-light")
+})
 
 let prevInputVal = "";
 let currInputVal = "";
@@ -135,4 +145,3 @@ const clickOperation = (key) => {
 const clickEqual = () => {
     equal.click();
 }
-  
