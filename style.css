@@ -161,3 +161,11 @@ html {
 .bg-purple:hover {
     background: #4d17ef;
 }
+
+.bg-purple-light {
+    background: #7d7b9b; 
+}
+
+.bg-purple-light:hover {
+    background: #706abd; 
+}
