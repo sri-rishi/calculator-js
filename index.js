@@ -103,8 +103,10 @@ clearAll.addEventListener("click", (e) => {
 });
 
 clearLastEntity.addEventListener("click", (e) => {
-    currInput.innerText = "";
-    currInputVal = ""
+    if(currInput.innerText !== "0") {
+        currInput.innerText = "";
+        currInputVal = ""
+    }
 })
 
 
