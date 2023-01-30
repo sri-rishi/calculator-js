@@ -1,6 +1,8 @@
 const app = document.querySelector(".app")
 const checkbox = document.getElementById("theme-checkbox");
 const container = document.querySelector(".container");
+const title = document.querySelector(".title");
+const buttonDiv = document.querySelector(".buttons-div") 
 
 const prevInput = document.querySelector(".prev-input");
 const currInput = document.querySelector(".curr-input");
@@ -16,7 +18,9 @@ const clearAll = document.querySelector(".all-clear");
 
 checkbox.addEventListener("change", () => {
     app.classList.toggle("light");
-    container.classList.toggle("container-light")
+    container.classList.toggle("container-light");
+    title.classList.toggle("title-dark");
+    buttonDiv.classList.toggle("buttons-div-light")
 })
 
 let prevInputVal = "";
